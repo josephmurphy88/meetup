@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Letter Bible</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/ConversionStPaul.JPG') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .icon-link {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 120px;
+            height: 150px;
+            box-sizing: border-box;
+        }
+        .icon-link:hover {
+            transform: translateY(-5px);
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .icon-link span {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            word-wrap: break-word;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-position: calc(50% - 100px) center;
+                background-size: cover;
+            }
+            .icon {
+                width: 40px;
+                height: 40px;
+            }
+            .icon-link span {
+                font-size: 12px;
+            }
+            .icon-link {
+                padding: 10px;
+                width: 100px;
+                height: 130px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.blueletterbible.org/" class="icon-link">
+            <img src="https://www.blueletterbible.org/images/blb-logo.png" alt="Blue Letter Bible icon" class="icon">
+            <span>Blue Letter Bible</span>
+        </a>
+    </div>
+</body>
+</html>
